@@ -3023,18 +3023,18 @@
   
         .btn-primary {
           color: #fff;
-          background-color: #64a19d;
-          border-color: #64a19d;
+          background-color: #FAA300;
+          border-color: #000000;
         }
         .btn-primary:hover {
-          color: #fff;
-          background-color: #558985;
-          border-color: #50817e;
+          color: #000000;
+          background-color: #ffffff;
+          border-color: #ffffff;
         }
         .btn-check:focus + .btn-primary, .btn-primary:focus {
-          color: #fff;
-          background-color: #558985;
-          border-color: #50817e;
+          color: #FAA300;
+          background-color: #ffffff;
+          border-color: #ffffff;
           box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
         }
         .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
@@ -3046,9 +3046,9 @@
           box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
         }
         .btn-primary:disabled, .btn-primary.disabled {
-          color: #fff;
-          background-color: #64a19d;
-          border-color: #64a19d;
+          color: #ffffff;
+          background-color: #565857;
+          border-color: #f5efed;
         }
   
         .btn-secondary {
@@ -4045,7 +4045,7 @@
         .nav-link {
           display: block;
           padding: 0.5rem 1rem;
-          color: #64a19d;
+          color: #FAA300;
           text-decoration: none;
           transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
         }
@@ -4055,7 +4055,7 @@
           }
         }
         .nav-link:hover, .nav-link:focus {
-          color: #50817e;
+          color: #ffffff;
         }
         .nav-link.disabled {
           color: #6c757d;
@@ -4576,7 +4576,7 @@
         }
   
         .navbar-dark .navbar-brand {
-          color: #fff;
+          color: #FAA300;
         }
         .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
           color: #fff;
@@ -4776,7 +4776,7 @@
           font-size: 1rem;
           color: #212529;
           text-align: left;
-          background-color: #fff;
+          background-color: #FAA300;
           border: 0;
           border-radius: 0;
           overflow-anchor: none;
@@ -4788,7 +4788,7 @@
           }
         }
         .accordion-button:not(.collapsed) {
-          color: #5a918d;
+          color: #FAA300;
           background-color: #f0f6f5;
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
         }
@@ -11468,8 +11468,8 @@
           #mainNav .navbar-toggler {
           font-size: 80%;
           padding: 0.75rem;
-          color: #64a19d;
-          border: 1px solid #64a19d;
+          color: #FAA300;
+          border: 1px solid #000000;
         }
           #mainNav .navbar-toggler:focus {
           outline: none;
@@ -11498,40 +11498,40 @@
           }
           #mainNav .navbar-brand {
             padding: 0.5rem 0;
-            color: rgba(255, 255, 255, 0.5);
+            color: #FAA300;
           }
           #mainNav .nav-link {
             transition: none;
             padding: 2rem 1.5rem;
-            color: rgba(255, 255, 255, 0.5);
+            color: #FAA300;
           }
           #mainNav .nav-link:hover {
             color: rgba(255, 255, 255, 0.75);
           }
           #mainNav .nav-link:active {
-            color: #fff;
-          }
-          #mainNav.navbar-shrink {
-            background-color: #fff;
+            color: #FAA300;
           }
           #mainNav.navbar-shrink .navbar-brand {
-            color: #000;
+            color: #000000;
           }
+            #mainNav.navbar-shrink {
+                background-color: #ffffff;
+            }
           #mainNav.navbar-shrink .nav-link {
-            color: #000;
+            color: #000000;
             padding: 1.5rem 1.5rem 1.25rem;
             border-bottom: 0.25rem solid transparent;
           }
           #mainNav.navbar-shrink .nav-link:hover {
-            color: #64a19d;
+            color: #FAA300;
           }
           #mainNav.navbar-shrink .nav-link:active {
-            color: #467370;
+            color: #FAA300;
           }
           #mainNav.navbar-shrink .nav-link.active {
-            color: #64a19d;
+            color: #FAA300;
             outline: none;
-            border-bottom: 0.25rem solid #64a19d;
+            border-bottom: 0.25rem solid #FAA300;
           }
         }
   
@@ -11610,7 +11610,7 @@
         @media (min-width: 992px) {
         .projects-section .featured-text {
             padding: 0 0 0 2rem;
-            border-left: 0.5rem solid #64a19d;
+            border-left: 0.5rem solid #FAA300;
           }
         }
         .projects-section .project-text {
@@ -11622,7 +11622,7 @@
             padding: 5rem;
           }
         .projects-section .project-text hr {
-            border-color: #64a19d;
+            border-color: #FAA300;
             border-width: 0.25rem;
             width: 30%;
           }
@@ -11630,7 +11630,7 @@
   
         .signup-section {
           padding: 10rem 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
@@ -11652,7 +11652,7 @@
         }
         .contact-section .card {
           border: 0;
-          border-bottom: 0.25rem solid #64a19d;
+          border-bottom: 0.25rem solid #FAA300;
         }
         .contact-section .card h4, .contact-section .card .h4 {
           font-size: 0.8rem;
@@ -11661,7 +11661,7 @@
           letter-spacing: 0.15rem;
         }
         .contact-section .card hr {
-          border-color: #64a19d;
+          border-color: #FAA300;
           border-width: 0.25rem;
           width: 3rem;
         }
@@ -11685,6 +11685,5 @@
         }
   
         .footer {
-          padding: 5rem 0;
-        }`
-}) ();
+            padding: 5rem 0;
+        }
