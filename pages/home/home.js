@@ -48,8 +48,9 @@ async function Home () {
                         <div class="d-flex justify-content-center">
                             <div class="text-center">
                                 <h1 class="mx-auto">Js.Land</h1>
-                                <h2 class="text-white-50 mx-auto mt-2 mb-5">Your source for everything code</h2>
+                                <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
+
                             </div>
                         </div>
                     </div>
@@ -58,36 +59,43 @@ async function Home () {
                 <section class="about-section text-center" id="about">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5 justify-content-center">
-                            <div class="col-lg-5 mb-5">
-                                <img class="img-fluid" src="assets/img/coffee-code.png" alt="..." />
+                            <div class="col-lg-5 mt-7">
+                                <img class="img-fluid" src="assets/img/home/coffee-code.png" alt="..." />
                             </div>
-                            <div class="col-lg-7 mt-5">
-                                <h4 class="text-white mb-4">
-                                    Hi my name is Josh,
-                                    I'm a Full-Stack developer and general Js enthusiast.
-                                  </h4>
-                                <p class="text-white-50">
-                                    My aim with Js.Land is to be an informative space for development news and info for both professional and aspiring web developers. 
-                                    I believe the current landscape of technology and development specifically the ability of anyone to self-teach is unprecedented.
-                                    Being a self-taught developer myself, I felt I could contribute to the general development community in positive way.
-                                 </p>
+                            <div id="intro-text" class="col-lg-7">
+                                <div class="text-center mx-auto mb-3">
+                                    <h3>
+                                        Hi my name is Josh,
+                                        I'm a Full-Stack developer and general Js enthusiast.
+                                     </h3>
+                                </div>
+                                <div class="text-white mx-auto pb-3">
+                                    <p>
+                                        My aim with Js.Land is an informative space for development news and info for professional and aspiring web developers. 
+                                        I believe the current landscape of technology and development, specifically the ability of anyone to get online and learn, is unprecedented.
+                                        I',m a self-taught developer and lifelong Developer Advocate.
+                                     </p>
+                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- Projects-->
-                <section class="projects-section bg-light" id="projects">
+                <section class="projects-section bg-light mb-3 mt-3" id="projects">
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
-                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 border-0" src="assets/img//home/cloud-code.png" alt="..." /></div>
-                            <div class="col-xl-4 col-lg-5">
-                                <div class="featured-text text-center text-lg-left">
-                                    <h4>Knowledge</h4>
-                                    <p class="text-black-50 mb-0">
-                                        Weather it be YouTube, Twitter, Free Code Academy or some other resource
-                                        There is truely a wealth of knowledge and information available to you.
+                        <div class="div gx-0 mb-4 mb-lg-5 align-items-center">
+                            <div class="row">
+                                <div class="row justify-content-center mb-3"><img class="img-fluid mb-3 mb-lg-0 border-0 w-50" src="assets/img//home/cloud-code-one.png" alt="..." /></div>
+                                <div class="row featured-text text-center text-lg-left pt-1">
+                                    <h4 id="js-land-mission-statement-header" class="mt-3">Js.Land () {</h4>
+                                    <p id="js-land-mission-statement" class="text-black mb-5">
+                                        will provide tools, knowledge and access to anyone pursuing their dreams of being a better developer. JsLand is my attempt to find a way to share the lessons, articles, and knowledge
+                                        I have gathered over the years and still do to this day. As well as a way to connect with the greater community of developers.
                                     </p>
+                                    <div class="row justify-content-center">
+                                        <div id="js-land-mission-statement-bottom-border" class="w-25"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +108,7 @@ async function Home () {
                                 <div class="bg-black text-center h-100 project">
                                     <div class="d-flex h-100">
                                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                                            <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                            <p class="text-white">A person who  helps connect the world around them in ways that would otherwise not be possible.</p>
                                             <hr class="d-none d-lg-block mb-0 ms-0" />
                                         </div>
                                     </div>
@@ -114,14 +122,9 @@ async function Home () {
                                 <div class="bg-black text-center h-100 project">
                                     <div class="d-flex h-100">
                                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <ul>
-                                                <li>Vanilla JavaScript</li>
-                                                <li>NodeJs</li>
-                                                <li>Deno</li>
-                                                <li>ExpressJs</li>
-                                                
-                                            
-                                            </ul>
+                                            <p class="text-white">
+                                                The most widely used language in the world for creating complex aplications and websites on the internet.
+                                            </p>
                                             <hr class="d-none d-lg-block mb-0 me-0" />
                                         </div>
                                     </div>
@@ -136,7 +139,7 @@ async function Home () {
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-10 col-lg-8 mx-auto text-center">
                                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                                <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                                <h2 class="mb-5">Subscribe to receive updates!</h2>
                                 <!-- * * * * * * * * * * * * * * *-->
                                 <!-- * * SB Forms Contact Form * *-->
                                 <!-- * * * * * * * * * * * * * * *-->
@@ -161,7 +164,7 @@ async function Home () {
                                             <div class="fw-bolder">Form submission successful!</div>
                                             To activate this form, sign up at
                                             <br />
-                                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                            <a target="_blank" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                         </div>
                                     </div>
                                     <!-- Submit error message-->
@@ -182,9 +185,9 @@ async function Home () {
                                 <div class="card py-4 h-100">
                                     <div class="card-body text-center">
                                         <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                        <h4 class="text-uppercase m-0">LinkedIn</h4>
+                                        <h3 class="text-uppercase m-0">LinkedIn</h3>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small text-black-50"><a href="https://www.linkedin.com/in/redvanjosh/">@RedVanJosh</a></div>
+                                        <div class="small text-black-50"><a target="_blank" href="https://www.linkedin.com/in/redvanjosh/">@RedVanJosh</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -192,9 +195,9 @@ async function Home () {
                                 <div class="card py-4 h-100">
                                     <div class="card-body text-center">
                                         <i class="fas fa-envelope text-primary mb-2"></i>
-                                        <h4 class="text-uppercase m-0">Email</h4>
+                                        <h3 class="text-uppercase m-0">Email</h3>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small"><a href="#!">josh@js.land.com</a></div>
+                                        <div class="small"><a target="_blank" href="#!">josh@js.land.com</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -202,9 +205,9 @@ async function Home () {
                                 <div class="card py-4 h-100">
                                     <div class="card-body text-center">
                                         <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                        <h4 class="text-uppercase m-0">Twitter</h4>
+                                        <h3 class="text-uppercase m-0">Twitter</h3>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small"><a href="https://www.twitter.com/JsLandJosh">@JsLandJosh</a></div>
+                                        <div class="small"><a target="_blank" href="https://www.twitter.com/JsLandJosh">@JsLandJosh</a></div>
                                     </div>
                                 </div>
                             </div>
