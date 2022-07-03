@@ -68,10 +68,46 @@
         scroll-behavior: smooth;
       }
     }
-  
+
+    @font-face {
+        font-family: 'MonoLisa';
+        src: url('MonoLisa-Bold.woff2') format('woff2'),
+        url('MonoLisa-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'MonoLisa';
+        src: url('MonoLisa-Regular.woff2') format('woff2'),
+        url('MonoLisa-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'MonoLisa';
+        src: url('MonoLisa-BoldItalic.woff2') format('woff2'),
+        url('MonoLisa-BoldItalic.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'MonoLisa';
+        src: url('MonoLisa-RegularItalic.woff2') format('woff2'),
+        url('MonoLisa-RegularItalic.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+
     body {
       margin: 0;
-      font-family: var(--bs-body-font-family);
+      font-family: 'MonoLisa';
       font-size: var(--bs-body-font-size);
       font-weight: var(--bs-body-font-weight);
       line-height: var(--bs-body-line-height);
@@ -244,7 +280,7 @@
         code,
         kbd,
         samp {
-      font-family: var(--bs-font-monospace);
+      font-family: "MonoLisa";
       font-size: 1em;
       direction: ltr /* rtl:ignore */;
       unicode-bidi: bidi-override;
@@ -7759,7 +7795,7 @@
         }
   
         .font-monospace {
-          font-family: var(--bs-font-monospace) !important;
+          font-family: "MonoLisa" !important;
         }
   
         .fs-1 {
@@ -11499,6 +11535,7 @@
           #mainNav .navbar-brand {
             padding: 0.5rem 0;
             color: #FAA300;
+            font-style: italic;
           }
           #mainNav .nav-link {
             transition: none;
@@ -11538,7 +11575,7 @@
         .btn {
           box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
           padding: 1.25rem 2rem;
-          font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-family: "MonoLisa"
           font-size: 80%;
           text-transform: uppercase;
           letter-spacing: 0.15rem;
@@ -11551,14 +11588,16 @@
           height: auto;
           min-height: 35rem;
           padding: 15rem 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
           background-size: cover;
         }
         .masthead h1, .masthead .h1 {
-          font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-family: 'MonoLisa';
+          font-style: italic;
+          font-weight: bold;
           font-size: 2.5rem;
           line-height: 2.5rem;
           letter-spacing: 0.8rem;
@@ -11595,7 +11634,7 @@
   
         .about-section {
           padding-top: 10rem;
-          background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+          background: linear-gradient(to bottom, #000 75%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
         }
         .about-section p {
           margin-bottom: 5rem;
@@ -11630,7 +11669,7 @@
   
         .signup-section {
           padding: 10rem 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
@@ -11640,7 +11679,7 @@
           box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
           padding: 1.25rem 2rem;
           height: auto;
-          font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-family: "MonoLisa";
           font-size: 80%;
           text-transform: uppercase;
           letter-spacing: 0.15rem;
@@ -11656,7 +11695,7 @@
         }
         .contact-section .card h4, .contact-section .card .h4 {
           font-size: 0.8rem;
-          font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-family: "MonoLisa";
           text-transform: uppercase;
           letter-spacing: 0.15rem;
         }

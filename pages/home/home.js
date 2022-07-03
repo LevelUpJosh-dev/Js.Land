@@ -9,6 +9,7 @@ async function Home () {
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 <meta name="description" content="" />
                 <meta name="author" content="" />
+                <link rel="preload" href="fonts/MonoLisa-Regular.woff2" as="font" type="font/woff2" crossorigin>
                 <title>Js.Land</title>
                 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
                 <style>
@@ -57,11 +58,14 @@ async function Home () {
                 <section class="about-section text-center" id="about">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5 justify-content-center">
-                            <div class="col-lg-6 mb-5">
+                            <div class="col-lg-5 mb-5">
                                 <img class="img-fluid" src="assets/img/coffee-code.png" alt="..." />
                             </div>
-                            <div class="col-lg-6 mt-5">
-                                <h3 class="text-white mb-4">Hi my name is Josh, I'm a Full-Stack developer and general Js enthusiast.</h3>
+                            <div class="col-lg-7 mt-5">
+                                <h4 class="text-white mb-4">
+                                    Hi my name is Josh,
+                                    I'm a Full-Stack developer and general Js enthusiast.
+                                  </h4>
                                 <p class="text-white-50">
                                     My aim with Js.Land is to be an informative space for development news and info for both professional and aspiring web developers. 
                                     I believe the current landscape of technology and development specifically the ability of anyone to self-teach is unprecedented.
@@ -110,7 +114,14 @@ async function Home () {
                                 <div class="bg-black text-center h-100 project">
                                     <div class="d-flex h-100">
                                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                            <ul>
+                                                <li>Vanilla JavaScript</li>
+                                                <li>NodeJs</li>
+                                                <li>Deno</li>
+                                                <li>ExpressJs</li>
+                                                
+                                            
+                                            </ul>
                                             <hr class="d-none d-lg-block mb-0 me-0" />
                                         </div>
                                     </div>
@@ -171,9 +182,9 @@ async function Home () {
                                 <div class="card py-4 h-100">
                                     <div class="card-body text-center">
                                         <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                        <h4 class="text-uppercase m-0">Youtube</h4>
+                                        <h4 class="text-uppercase m-0">LinkedIn</h4>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small text-black-50"><a href="https://">Check me out</a></div>
+                                        <div class="small text-black-50"><a href="https://www.linkedin.com/in/redvanjosh/">@RedVanJosh</a></div>
                                     </div>
                                 </div>
                             </div>
