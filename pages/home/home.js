@@ -173,7 +173,7 @@ async function Home () {
                                         <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                         <h4 class="text-uppercase m-0">Youtube</h4>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                        <div class="small text-black-50"><a href="https://">Check me out</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@ async function Home () {
                                         <i class="fas fa-envelope text-primary mb-2"></i>
                                         <h4 class="text-uppercase m-0">Email</h4>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small text-black-50"><a href="#!">josh@js.land.com</a></div>
+                                        <div class="small"><a href="#!">josh@js.land.com</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@ async function Home () {
                                         <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                         <h4 class="text-uppercase m-0">Twitter</h4>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small text-black-50"></div>
+                                        <div class="small"><a href="https://www.twitter.com/JsLandJosh">@JsLandJosh</a></div>
                                     </div>
                                 </div>
                             </div>
