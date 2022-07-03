@@ -134,7 +134,7 @@ async function Home () {
                     </div>
                 </section>
                 <!-- Signup-->
-                <section class="signup-section" id="signup">
+                <section class="signup-section d-none" id="signup">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -197,7 +197,7 @@ async function Home () {
                                         <i class="fas fa-envelope text-primary mb-2"></i>
                                         <h3 class="text-uppercase m-0">Email</h3>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small"><a target="_blank" href="#!">josh@js.land.com</a></div>
+                                        <div class="small"><a target="_blank" href="#!">josh@js.land</a></div>
                                     </div>
                                 </div>
                             </div>
