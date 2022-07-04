@@ -270,6 +270,10 @@
     a:hover {
       color: #FAA300;
     }
+
+    .image-link:hover {
+        color: #000000;
+    }
   
     a:not([href]):not([class]), a:not([href]):not([class]):hover {
       color: inherit;
@@ -11780,5 +11784,5 @@
   
         .footer {
             padding: 5rem 0;
-            color: #FAA300;7
+            color: #FAA300;
         }
