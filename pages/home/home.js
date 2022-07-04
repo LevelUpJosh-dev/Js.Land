@@ -6,6 +6,7 @@ async function Home () {
         <html lang="en">
             <head>
                 <meta charset="utf-8" />
+
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 <meta name="description" content="Js.Lands mission is to educate and inspire developers everywhere." />
                 <meta name="author" content="JsLandJosh aka RedVanJosh" />
@@ -29,7 +30,7 @@ async function Home () {
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <div class="container px-4 px-lg-5">
                         <a class="navbar-brand" href="#page-top">
-                            <img width="14%" src="assets/img/home/logo-solid.png" alt="Js.Land" class="img-fluid pb-3" />
+                            <img width="15%" src="assets/img/home/js-land-transparent-laptop.png" alt="Js.Land" class="img-fluid pb-3" />
                         </a>
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             Menu
@@ -49,7 +50,7 @@ async function Home () {
                     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                         <div class="d-flex justify-content-center">
                             <div class="text-center">
-                                <img width="65%" src="assets/img/home/logo-transparent.png" alt="Js.Land" class="img-fluid pb-3" />
+                                <img width="45%" src="assets/img/home/js-land-transparent-laptop.png" alt="Js.Land" class="img-fluid pb-2" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
 

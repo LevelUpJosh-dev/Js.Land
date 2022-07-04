@@ -4194,15 +4194,15 @@
           text-decoration: none;
           white-space: nowrap;
         }
-        .navbar-brand img {
-            display: none;
-        }
         .navbar-nav {
           display: flex;
           flex-direction: column;
           padding-left: 0;
           margin-bottom: 0;
           list-style: none;
+        }
+        .navbar-brand img {
+            display: none;
         }
         .navbar-nav .nav-link {
           padding-right: 0;
@@ -11574,12 +11574,12 @@
           #mainNav.navbar-shrink .navbar-brand {
             color: #000000;
           }
-          #mainNav.navbar-shrink img {
-              display: block;
+          #mainNav.navbar-shrink {
+            background-color: #ffffff;
           }
-            #mainNav.navbar-shrink {
-                background-color: #ffffff;
-            }
+          #mainNav.navbar-shrink img {
+            display: block;
+          }
           #mainNav.navbar-shrink .nav-link {
             color: #000000;
             padding: 1.5rem 1.5rem 1.25rem;
@@ -11732,6 +11732,11 @@
         }
   
         .contact-section {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: cover;
           padding-top: 5rem;
         }
         .contact-section .card {
