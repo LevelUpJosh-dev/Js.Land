@@ -137,7 +137,7 @@ async function Home () {
                     </div>
                 </section>
                 <!-- Signup-->
-                <section class="signup-section d-none" id="signup">
+                <section class="signup-section d-none">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -181,7 +181,7 @@ async function Home () {
                     </div>
                 </section>
                 <!-- Contact-->
-                <section class="contact-section bg-black">
+                <section id="signup" class="contact-section bg-black">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-4 mb-3 mb-md-0">
