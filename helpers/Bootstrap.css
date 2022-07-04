@@ -71,8 +71,8 @@
 
     @font-face {
         font-family: 'MonoLisa';
-        src: url('MonoLisa-Bold.woff2') format('woff2'),
-        url('MonoLisa-Bold.woff') format('woff');
+        src: url('fonts/MonoLisa-Bold.woff2') format('woff2'),
+        url('fonts/MonoLisa-Bold.woff') format('woff');
         font-weight: bold;
         font-style: normal;
         font-display: swap;
@@ -80,8 +80,8 @@
 
     @font-face {
         font-family: 'MonoLisa';
-        src: url('MonoLisa-Regular.woff2') format('woff2'),
-        url('MonoLisa-Regular.woff') format('woff');
+        src: url('fonts/MonoLisa-Regular.woff2') format('woff2'),
+        url('fonts/MonoLisa-Regular.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -89,8 +89,8 @@
 
     @font-face {
         font-family: 'MonoLisa';
-        src: url('MonoLisa-BoldItalic.woff2') format('woff2'),
-        url('MonoLisa-BoldItalic.woff') format('woff');
+        src: url('fonts/MonoLisa-BoldItalic.woff2') format('woff2'),
+        url('fonts/MonoLisa-BoldItalic.woff') format('woff');
         font-weight: bold;
         font-style: italic;
         font-display: swap;
@@ -98,8 +98,8 @@
 
     @font-face {
         font-family: 'MonoLisa';
-        src: url('MonoLisa-RegularItalic.woff2') format('woff2'),
-        url('MonoLisa-RegularItalic.woff') format('woff');
+        src: url('fonts/MonoLisa-RegularItalic.woff2') format('woff2'),
+        url('fonts/MonoLisa-RegularItalic.woff') format('woff');
         font-weight: normal;
         font-style: italic;
         font-display: swap;
@@ -4194,6 +4194,9 @@
           text-decoration: none;
           white-space: nowrap;
         }
+        .navbar-brand img {
+            display: none;
+        }
         .navbar-nav {
           display: flex;
           flex-direction: column;
@@ -4224,7 +4227,8 @@
           padding: 0.25rem 0.75rem;
           font-size: 1.25rem;
           line-height: 1;
-          background-color: transparent;
+          color: #000000;
+          background-color: #FAA300;
           border: 1px solid transparent;
           border-radius: 0.25rem;
           transition: box-shadow 0.15s ease-in-out;
@@ -9585,7 +9589,7 @@
         .flex-lg-shrink-1 {
             flex-shrink: 1 !important;
           }
-  
+
         .flex-lg-wrap {
             flex-wrap: wrap !important;
           }
@@ -11523,7 +11527,7 @@
           #mainNav .navbar-toggler {
           font-size: 80%;
           padding: 0.75rem;
-          color: #FAA300;
+          color: #000000;
           border: 1px solid #000000;
         }
           #mainNav .navbar-toggler:focus {
@@ -11569,6 +11573,9 @@
           }
           #mainNav.navbar-shrink .navbar-brand {
             color: #000000;
+          }
+          #mainNav.navbar-shrink img {
+              display: block;
           }
             #mainNav.navbar-shrink {
                 background-color: #ffffff;
@@ -11768,4 +11775,5 @@
   
         .footer {
             padding: 5rem 0;
+            color: #FAA300;7
         }

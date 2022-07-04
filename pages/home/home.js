@@ -28,7 +28,9 @@ async function Home () {
                 <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <div class="container px-4 px-lg-5">
-                        <a class="navbar-brand" href="#page-top">Js.Land</a>
+                        <a class="navbar-brand" href="#page-top">
+                            <img width="14%" src="assets/img/home/logo-solid.png" alt="Js.Land" class="img-fluid pb-3" />
+                        </a>
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             Menu
                             <i class="fas fa-bars"></i>
@@ -47,7 +49,7 @@ async function Home () {
                     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                         <div class="d-flex justify-content-center">
                             <div class="text-center">
-                                <h1 class="mx-auto">Js.Land</h1>
+                                <img width="65%" src="assets/img/home/logo-transparent.png" alt="Js.Land" class="img-fluid pb-3" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
 
@@ -86,7 +88,7 @@ async function Home () {
                         <!-- Featured Project Row-->
                         <div class="div gx-0 mb-4 mb-lg-5 align-items-center">
                             <div class="row">
-                                <div class="row justify-content-center mb-3"><img class="img-fluid mb-3 mb-lg-0 border-0 w-50" src="assets/img//home/cloud-code-one.png" alt="..." /></div>
+                                <div class="row justify-content-center mb-3"><img class="img-fluid mb-3 mb-lg-0 border-0 w-50" src="assets/img//home/cloud-code.png" alt="..." /></div>
                                 <div class="row featured-text text-center text-lg-left pt-1">
                                     <h4 id="js-land-mission-statement-header" class="mt-3">Js.Land () {</h4>
                                     <p id="js-land-mission-statement" class="text-black mb-5">
@@ -215,7 +217,7 @@ async function Home () {
                     </div>
                 </section>
                 <!-- Footer-->
-                <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div></footer>
+                <footer class="footer bg-black small text-center"><div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div></footer>
                 <!-- Bootstrap core JS-->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             </body>
