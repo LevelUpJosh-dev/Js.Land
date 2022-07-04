@@ -200,7 +200,7 @@ async function Home () {
                                         <i class="fas fa-envelope text-primary mb-2"></i>
                                         <h3 class="text-uppercase m-0">Email</h3>
                                         <hr class="my-4 mx-auto" />
-                                        <div class="small"><a target="_blank" href="#!">josh@js.land</a></div>
+                                        <div class="small"><a target="_blank" href="mailto:josh@js.land">josh@js.land</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +218,20 @@ async function Home () {
                     </div>
                 </section>
                 <!-- Footer-->
-                <footer class="footer bg-black small text-center"><div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div></footer>
+                <footer class="footer bg-black small text-center">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <img width="8%" src="assets/img/home/logo-solid.png" alt="Js.Land solid logo" class="img-fluid pb-3" />
+                                is powered by:
+                                <a class="image-link" target="_blank" href="https://getbootstrap.com/" alt="bootstrap homepage link"><img width="14%" src="assets/img/home/bootstrap-logo.png" alt="bootstrap logo" class="img-fluid" />
+                                <a class="image-link" target="_blank" href="https://deno.land/" alt="deno homepage link"><img width="8%" src="assets/img/home/deno-logo-inverted.png" alt="deno logo" class="img-fluid" />
+                               <a class="image-link" target="_blank" href="https://www.monolisa.dev/" alt="monoLisa homepage link"><img width="18%" src="assets/img/home/monolisa-logo.png" alt="monoLisa font logo" class="img-fluid" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div>
+                </footer>
                 <!-- Bootstrap core JS-->
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
             </body>
