@@ -222,11 +222,11 @@ async function Home () {
                     <div class="container px-4 px-lg-5">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <img width="8%" src="assets/img/home/logo-solid.png" alt="Js.Land solid logo" class="img-fluid pb-3" />
+                                <img width="6%" src="assets/img/home/logo-solid.png" alt="Js.Land solid logo" class="img-fluid pb-3" />
                                 is powered by:
-                                <a class="image-link" target="_blank" href="https://getbootstrap.com/" alt="bootstrap homepage link"><img width="14%" src="assets/img/home/bootstrap-logo.png" alt="bootstrap logo" class="img-fluid" />
-                                <a class="image-link" target="_blank" href="https://deno.land/" alt="deno homepage link"><img width="8%" src="assets/img/home/deno-logo-inverted.png" alt="deno logo" class="img-fluid" />
-                               <a class="image-link" target="_blank" href="https://www.monolisa.dev/" alt="monoLisa homepage link"><img width="18%" src="assets/img/home/monolisa-logo.png" alt="monoLisa font logo" class="img-fluid" /></a>
+                                <a class="image-link" target="_blank" href="https://getbootstrap.com/" alt="bootstrap homepage link"><img width="10%" src="assets/img/home/bootstrap-logo.png" alt="bootstrap logo" class="img-fluid" />
+                                <a class="image-link" target="_blank" href="https://deno.land/" alt="deno homepage link"><img width="6%" src="assets/img/home/deno-logo-inverted.png" alt="deno logo" class="img-fluid" />
+                               <a class="image-link" target="_blank" href="https://www.monolisa.dev/" alt="monoLisa homepage link"><img width="14%" src="assets/img/home/monolisa-logo.png" alt="monoLisa font logo" class="img-fluid" /></a>
                             </div>
                         </div>
                     </div>
