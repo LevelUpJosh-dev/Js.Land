@@ -7,8 +7,8 @@ import { Home } from "./pages/home/home.js";
 server.use(serveStatic(`public`));
 
 server.get(`/`, async (request, response) => {
-    response.body = await Home();
-    response.send();
+  response.body = await Home();
+  response.send();
 });
 
 server.listen(3000);
