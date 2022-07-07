@@ -8,8 +8,8 @@ import { JavaScript } from "./pages/projects/javascript.js";
 server.use(serveStatic(`public`));
 
 server.get(`/`, async (request, response) => {
-    response.body = await Home();
-    response.send();
+  response.body = await Home();
+  response.send();
 });
 
 server.get(`/programmer`, async (request, response) => {

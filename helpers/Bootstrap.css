@@ -11617,7 +11617,7 @@
           height: auto;
           min-height: 35rem;
           padding: 15rem 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/home/webp/bg-masthead.webp");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
@@ -11682,7 +11682,7 @@
         }
 
         #js-land-mission-statement-header {
-            color: #FAA300;
+            color: #000000;
         }
 
         #js-land-mission-statement {
@@ -11718,7 +11718,7 @@
   
         .signup-section {
           padding: 10rem 0;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/home/webp/bg-masthead.webp");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
@@ -11736,7 +11736,7 @@
         }
   
         .contact-section {
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/home/webp/bg-masthead.webp");
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: scroll;
@@ -11783,7 +11783,7 @@
         }
   
         .footer {
-            padding: 5rem 0;
+            padding: 2.75rem 0;
             color: #FAA300;
         }
 

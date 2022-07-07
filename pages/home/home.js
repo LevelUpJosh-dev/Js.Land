@@ -1,30 +1,29 @@
 import { Serve } from "../../lobot.js";
 
-async function Home () {
-    return `
+async function Home() {
+  return `
         <!DOCTYPE html>
         <html lang="en">
             <head>
                 <meta charset="utf-8" />
-
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 <meta name="description" content="Js.Lands mission is to educate and inspire developers everywhere." />
                 <meta name="author" content="JsLandJosh aka RedVanJosh" />
                 <link rel="preload" href="fonts/MonoLisa-Regular.woff2" as="font" type="font/woff2" crossorigin>
                 <title>Js.Land</title>
                 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-                ${await Serve(`Bootstrap:css`)}
-                ${await Serve("BootstrapCustom:js")}
+                ${await Serve(`BootstrapCss`)}
+                ${await Serve("BootstrapCustomJs")}
                 <div id="home-javascript">
-                    ${await Serve(`Sherlock:js`)}
+                    ${await Serve(`Sherlock`)}
                 </div>
             </head>
             <body id="page-top">
                 <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                     <div class="container px-4 px-lg-5">
-                        <a class="navbar-brand" href="#page-top">
-                            <img width="15%" src="assets/img/home/js-land-transparent-laptop.png" alt="Js.Land" class="img-fluid pb-3" />
+                        <a class="navbar-brand" href="#page-top" aria-label="Js.Land main navigation">
+                            <img width="485px" height="485px" src="assets/img/home/webp/logo-solid.webp" alt="Js.Land logo image link" class="img-fluid logo-solid pb-3" />
                         </a>
                         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                             Menu
@@ -35,8 +34,7 @@ async function Home () {
                                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                            </ul>
+                                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -45,7 +43,7 @@ async function Home () {
                     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                         <div class="d-flex justify-content-center">
                             <div class="text-center">
-                                <img width="45%" src="assets/img/home/js-land-transparent-laptop.png" alt="Js.Land" class="img-fluid pb-2" />
+                                <img height="1080px" width="1080px" src="assets/img/home/webp/js-land-transparent-laptop.webp" alt="Js.Land" class="img-fluid pb-2 js-land-laptop" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
 
@@ -58,7 +56,7 @@ async function Home () {
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5 justify-content-center">
                             <div class="col-lg-5 mt-7">
-                                <img class="img-fluid" src="assets/img/home/coffee-code.png" alt="..." />
+                                <img height="1920" width="1824" class="img-fluid coffee-code" src="assets/img/home/webp/coffee-code.webp" alt="..." />
                             </div>
                             <div id="intro-text" class="col-lg-7">
                                 <div class="text-center mx-auto mb-3">
@@ -84,7 +82,7 @@ async function Home () {
                         <!-- Featured Project Row-->
                         <div class="div gx-0 mb-4 mb-lg-5 align-items-center">
                             <div class="row">
-                                <div id="mission" class="row justify-content-center mb-3"><img width="889" height="772" class="img-fluid mb-3 mb-lg-0 border-0 cloud-code-image" src="assets/img/home/webp/cloud-code.webp" alt="..." /></div>
+                                <div class="row justify-content-center mb-3"><img width="889" height="772" class="img-fluid mb-3 mb-lg-0 border-0 cloud-code-image" src="assets/img/home/webp/cloud-code.webp" alt="..." /></div>
                                 <div class="row featured-text text-center text-lg-left pt-1">
                                     <h4 id="js-land-mission-statement-header" class="mt-3">Js.Land () {</h4>
                                     <p id="js-land-mission-statement" class="text-black mb-5">
@@ -100,9 +98,7 @@ async function Home () {
                         <!-- Project One Row-->
                         <div id="projects" class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                             <div class="col-lg-6">
-                                <a href="/programmer" alt="Js.Land programmer page link">
-                                    <img width="1920" height="1079" class="img-fluid" src="assets/img/home/webp/scrabble-dev.webp" alt="..." />
-                                </a>
+                                <img width="1920" height="1079" class="img-fluid" src="assets/img/home/webp/scrabble-dev.webp" alt="..." />
                             </div>
                             <div class="col-lg-6">
                                 <div class="bg-black text-center h-100 project">
@@ -117,11 +113,7 @@ async function Home () {
                         </div>
                         <!-- Project Two Row-->
                         <div class="row gx-0 justify-content-center">
-                            <div class="col-lg-6">
-                                <a href="/javascript" alt="Js.Land javascript page link">
-                                    <img width="1920" height="1079" class="img-fluid scrabble-image" src="assets/img/home/webp/scrabble-js.webp" alt="..." />
-                                </a>
-                            </div>
+                            <div class="col-lg-6"><img width="1920" height="1079" class="img-fluid scrabble-image" src="assets/img/home/webp/scrabble-js.webp" alt="..." /></div>
                             <div class="col-lg-6 order-lg-first">
                                 <div class="bg-black text-center h-100 project">
                                     <div class="d-flex h-100">
@@ -222,21 +214,27 @@ async function Home () {
                 <footer class="footer bg-black small text-center">
                     <div class="container px-4 px-lg-5">
                         <div class="row justify-content-center">
-                            <div class="col">
-                                <img width="8%" src="assets/img/home/logo-solid.png" alt="Js.Land solid logo" class="img-fluid pb-3" />
+                            <div class="col align-items-center">
+                                <div class="text-center text-lg-left">
+                                    <a class="image-link" href="#page-top" alt="Js.Land home link"><img width="485px" height="485px" src="assets/img/home/webp/logo-solid.webp" alt="Js.Land solid logo" class="img-fluid pb-3 logo-solid footer"/></a>
+                                </div>
                                 is powered by:
-                                <a class="image-link" target="_blank" href="https://getbootstrap.com/" alt="bootstrap homepage link"><img width="14%" src="assets/img/home/bootstrap-logo.png" alt="bootstrap logo" class="img-fluid" />
-                                <a class="image-link" target="_blank" href="https://deno.land/" alt="deno homepage link"><img width="8%" src="assets/img/home/deno-logo-inverted.png" alt="deno logo" class="img-fluid" />
-                               <a class="image-link" target="_blank" href="https://www.monolisa.dev/" alt="monoLisa homepage link"><img width="18%" src="assets/img/home/monolisa-logo.png" alt="monoLisa font logo" class="img-fluid" /></a>
+                                <div class="text-center text-lg-left">
+                                    <a class="image-link" target="_blank" href="https://getbootstrap.com/" alt="bootstrap homepage link"><img width="500px" height="500px" src="assets/img/home/webp/bootstrap-logo.webp" alt="bootstrap logo" class="img-fluid bootstrap-logo"/></a>
+                                </div>
+                                    <a class="image-link" target="_blank" href="https://deno.land/" alt="deno homepage link"><img width="512px" height="512px" src="assets/img/home/webp/deno-logo-inverted.webp" alt="deno logo" class="img-fluid deno-inverted-logo"/></a>
+                                <div class="text-center text-lg-left py-3">
+                                    <a class="image-link" target="_blank" href="https://www.monolisa.dev/" alt="monoLisa homepage link"><img width="1346" height="474" src="assets/img/home/webp/monolisa-logo.webp" alt="monoLisa font logo" class="img-fluid monolisa-logo"/></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div>
                 </footer>
-                ${await Serve('Bootstrap:js')}
+                ${await Serve('BootstrapJs')}
             </body>
         </html>
-    `
+    `;
 }
 
 export { Home };
