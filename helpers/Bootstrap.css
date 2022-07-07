@@ -11674,7 +11674,7 @@
             color: #FAA300;
         }
         .about-section {
-          padding-top: 10rem;
+          padding-top: 5rem;
           background: linear-gradient(to bottom, #000 75%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
         }
         .about-section p {
@@ -11786,3 +11786,44 @@
             padding: 5rem 0;
             color: #FAA300;
         }
+
+.logo-solid {
+    width: 16%;
+}
+
+.droplet-logo {
+    width: 75%;
+}
+
+.deno-inverted-logo {
+    width: 8%;
+}
+
+.monolisa-logo {
+    width: 12%;
+    padding-top: 10px;
+}
+
+.cloud-code-image {
+    width: 100%;
+}
+
+.scrabble-image {
+    width: 100%;
+}
+
+.bootstrap-logo {
+    width: 16%;
+}
+
+.logo-solid.footer {
+    width: 10%;
+}
+
+.js-land-laptop {
+    width: 50%;
+}
+
+.coffee-code {
+    width: 100%;
+}
