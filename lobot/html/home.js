@@ -1,23 +1,11 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from "../lobot.js";
 
 async function Home() {
+  const { HtmlHead } = await Serve(`head:html`);
   return `
         <!DOCTYPE html>
         <html lang="en">
-            <head>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-                <meta name="description" content="Js.Lands mission is to educate and inspire developers everywhere." />
-                <meta name="author" content="JsLandJosh aka RedVanJosh" />
-                <link rel="preload" href="fonts/MonoLisa-Regular.woff2" as="font" type="font/woff2" crossorigin>
-                <title>Js.Land</title>
-                <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-                ${await Serve(`BootstrapCss`)}
-                ${await Serve("BootstrapCustomJs")}
-                <div id="home-javascript">
-                    ${await Serve(`Sherlock`)}
-                </div>
-            </head>
+            ${await HtmlHead()}
             <body id="page-top">
                 <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -230,7 +218,7 @@ async function Home() {
                     </div>
                     <div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div>
                 </footer>
-                ${await Serve('BootstrapJs')}
+                ${await Serve('bootstrap:js')}
             </body>
         </html>
     `;
