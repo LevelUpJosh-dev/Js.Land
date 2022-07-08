@@ -20,7 +20,10 @@ async function Footer() {
                 </div>
             </div>
         </div>
-        <div class="container px-4 px-lg-5">Copyright &copy; Js.Land 2022</div>
+        <div class="container px-4 px-lg-5">
+            Copyright &copy; Js.Land 2022
+        </div>
+
     </footer>
     ${await Serve('bootstrap:js')}
   `;
