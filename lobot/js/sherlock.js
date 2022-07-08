@@ -42,6 +42,4 @@
 
     return elements;
   };
-
-  document.getElementById(`home-javascript`).remove();
 })();
