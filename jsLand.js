@@ -2,7 +2,7 @@ import { opine, serveStatic } from "https://deno.land/x/opine@2.2.0/mod.ts";
 
 const server = opine();
 
-import { Home } from "./lobot/pages/home.js";
+import { Home } from "./pages/home/home.js";
 
 server.use(serveStatic(`public`));
 
