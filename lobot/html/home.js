@@ -1,11 +1,11 @@
-import { Serve } from "../../lobot/lobot.js";
+import { Serve } from "../lobot.js";
 
 async function Home() {
-  const components = await Serve(`html:head`);
+  const { HtmlHead } = await Serve(`head:html`);
   return `
         <!DOCTYPE html>
         <html lang="en">
-            ${await components.HtmlHead()}
+            ${await HtmlHead()}
             <body id="page-top">
                 <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
