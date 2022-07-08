@@ -1,6 +1,6 @@
 import { Serve } from "../lobot.js";
 
-async function HtmlHead() {
+async function Head() {
   return `
     <head>
         <meta charset="utf-8" />
@@ -12,11 +12,9 @@ async function HtmlHead() {
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         ${await Serve(`bootstrap:css`)}
         ${await Serve("bootstrapCustom:js")}
-        <div id="home-javascript">
-            ${await Serve(`sherlock:js`)}
-        </div>
+        ${await Serve(`sherlock:js`)}
     </head>
   `;
 }
 
-export { HtmlHead };
+export { Head };

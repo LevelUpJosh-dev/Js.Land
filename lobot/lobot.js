@@ -1,7 +1,8 @@
-import { HtmlHead } from "./html/head.js";
+import { Head, Footer } from "./fragments.js";
 
-const componentBundle = {
-    HtmlHead: HtmlHead,
+const fragmentBundle = {
+    Head: Head,
+    Footer: Footer
 }
 
 /** Reads and returns the text content of the given resource **/
@@ -19,10 +20,6 @@ async function LoadResource (name, type) {
           : null;
 }
 
-async function LoadHtmlBundle () {
-  return componentBundle
-}
-
 async function Serve(resource) {
   const name = resource.split(`:`)[0];
   const type = resource.split(`:`)[1];
@@ -30,8 +27,9 @@ async function Serve(resource) {
     return await LoadResource(name, type);
   }
   if (type === `html`) {
-    return await LoadHtmlBundle(name);
+    return await fragmentBundle[name];
   }
 }
+
 
 export { Serve };
