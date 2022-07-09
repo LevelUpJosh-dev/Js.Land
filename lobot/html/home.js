@@ -18,7 +18,6 @@ async function Home() {
                                 <img height="1080px" width="1080px" src="assets/img/home/webp/js-land-transparent-laptop.webp" alt="Js.Land" class="img-fluid pb-2 js-land-laptop" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
-
                             </div>
                         </div>
                     </div>
@@ -102,7 +101,7 @@ async function Home() {
                     </div>
                 </section>
                 <!-- Contact-->
-                <section id="signup" class="contact-section bg-black">
+                <section id="signup" class="contact-section">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-4 mb-3 mb-md-0">
