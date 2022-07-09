@@ -2,7 +2,7 @@ import { Serve } from "../lobot.js";
 
 async function Footer() {
   return `
-    <footer class="footer bg-black small text-center">
+    <footer class="footer small text-center">
         <div class="container px-4 px-lg-5">
             <div class="row justify-content-center">
                 <div class="col align-items-center">
