@@ -9,7 +9,7 @@ async function Home() {
         <html lang="en">
             ${await Head()}
             <body id="page-top">
-                ${await Navigation()})
+                ${await Navigation()}
                 <!-- Masthead-->
                 <header class="masthead">
                     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
