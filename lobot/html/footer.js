@@ -1,7 +1,7 @@
 import { Serve } from "../lobot.js";
 
 async function Footer() {
-    return `
+  return `
     <footer class="footer bg-black small text-center">
         <div class="container px-4 px-lg-5">
             <div class="row justify-content-center">
@@ -25,7 +25,7 @@ async function Footer() {
         </div>
 
     </footer>
-    ${await Serve('bootstrap:js')}
+    ${await Serve("bootstrap:js")}
   `;
 }
 
