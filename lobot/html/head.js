@@ -11,7 +11,8 @@ async function Head() {
         <title>Js.Land</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         ${await Serve(`bootstrap:css`)}
-        ${await Serve("bootstrapCustom:js")}
+        ${await Serve(`theme:css`)}
+        ${await Serve(`theme:js`)}
         ${await Serve(`sherlock:js`)}
     </head>
   `;

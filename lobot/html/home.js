@@ -1,15 +1,15 @@
-import { Serve } from "../lobot.js";
+import {Serve} from "../lobot.js";
 
 async function Home() {
-  const Head = await Serve(`Head:html`);
-  const Navigation = await Serve(`Navigation:html`);
-  const Footer = await Serve(`Footer:html`);
-  return `
+    const Head = await Serve(`Head:html`);
+    const Navigation = await Serve(`Navigation:html`);
+    const Footer = await Serve(`Footer:html`);
+    return `
         <!DOCTYPE html>
         <html lang="en">
             ${await Head()}
             <body id="page-top">
-                ${await Navigation()}
+                ${await Navigation()})
                 <!-- Masthead-->
                 <header class="masthead">
                     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
@@ -18,7 +18,6 @@ async function Home() {
                                 <img height="1080px" width="1080px" src="assets/img/home/webp/js-land-transparent-laptop.webp" alt="Js.Land" class="img-fluid pb-2 js-land-laptop" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
                                 <a class="btn btn-primary" href="#about">Learn more..</a>
-
                             </div>
                         </div>
                     </div>
@@ -101,52 +100,8 @@ async function Home() {
                         </div>
                     </div>
                 </section>
-                <!-- Signup-->
-                <section class="signup-section d-none">
-                    <div class="container px-4 px-lg-5">
-                        <div class="row gx-4 gx-lg-5">
-                            <div class="col-md-10 col-lg-8 mx-auto text-center">
-                                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                                <h2 class="mb-5">Subscribe to receive updates!</h2>
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- * * SB Forms Contact Form * *-->
-                                <!-- * * * * * * * * * * * * * * *-->
-                                <!-- This form is pre-integrated with SB Forms.-->
-                                <!-- To make this form functional, sign up at-->
-                                <!-- https://startbootstrap.com/solution/contact-forms-->
-                                <!-- to get an API token!-->
-                                <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                    <!-- Email address input-->
-                                    <div class="row input-group-newsletter">
-                                        <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                                    </div>
-                                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                                    <!-- Submit success message-->
-                                    <!---->
-                                    <!-- This is what your users will see when the form-->
-                                    <!-- has successfully submitted-->
-                                    <div class="d-none" id="submitSuccessMessage">
-                                        <div class="text-center mb-3 mt-2 text-white">
-                                            <div class="fw-bolder">Form submission successful!</div>
-                                            To activate this form, sign up at
-                                            <br />
-                                            <a target="_blank" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                        </div>
-                                    </div>
-                                    <!-- Submit error message-->
-                                    <!---->
-                                    <!-- This is what your users will see when there is-->
-                                    <!-- an error submitting the form-->
-                                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <!-- Contact-->
-                <section id="signup" class="contact-section bg-black">
+                <section id="signup" class="contact-section">
                     <div class="container px-4 px-lg-5">
                         <div class="row gx-4 gx-lg-5">
                             <div class="col-md-4 mb-3 mb-md-0">
@@ -188,7 +143,7 @@ async function Home() {
     `;
 }
 
-export { Home };
+export {Home};
 
 /**
  * TODO: ID binding from html fragments then allow front end to make basic call to server route for the given bound Id to the fragment
