@@ -76,7 +76,6 @@ async function Home() {
                                     <div class="d-flex h-100">
                                         <div class="project-text w-100 my-auto text-center text-lg-left">
                                             <p class="text-white">A person who  helps connect the world around them in ways that would otherwise not be possible.</p>
-                                            <hr class="d-none d-lg-block mb-0 ms-0" />
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +91,6 @@ async function Home() {
                                             <p class="text-white">
                                                 The most widely used language in the world for creating complex aplications and websites on the internet.
                                             </p>
-                                            <hr class="d-none d-lg-block mb-0 me-0" />
                                         </div>
                                     </div>
                                 </div>
