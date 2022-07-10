@@ -1,10 +1,12 @@
-import { ContentGrid, Footer, Head, Navigation } from "./fragments.js";
+import { ContentGrid, Footer, Head, Navigation, Home, TheEventLoop } from "./fragments.js";
 
 const fragmentBundle = {
   ContentGrid: ContentGrid,
+  Home: Home,
   Head: Head,
   Footer: Footer,
   Navigation: Navigation,
+  TheEventLoop: TheEventLoop
 };
 
 /** Reads and returns the text content of the given resource **/
@@ -22,14 +24,14 @@ async function LoadResource(name, type) {
     : null;
 }
 
-async function Serve(resource) {
+async function Serve(resource, config) {
   const name = resource.split(`:`)[0];
   const type = resource.split(`:`)[1];
   if (type === `css` || type === `js` || type === `txt`) {
     return await LoadResource(name, type);
   }
   if (type === `html`) {
-    return await fragmentBundle[name];
+    return fragmentBundle[name];
   }
 }
 

@@ -2,5 +2,9 @@ import { Head } from "./html/head.js";
 import { Footer } from "./html/footer.js";
 import { ContentGrid } from "./html/contentGrid.js";
 import { Navigation } from "./html/navigation.js";
+import { Home } from "./html/home.js";
 
-export { ContentGrid, Footer, Head, Navigation };
+/** Content Articles  **/
+import { TheEventLoop } from "./html/theEventLoop.js";
+
+export { ContentGrid, Footer, Head, Navigation, Home, TheEventLoop };
