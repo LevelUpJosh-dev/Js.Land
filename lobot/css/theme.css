@@ -1019,9 +1019,9 @@ a > code {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .contact-section .card hr {
-    color: #000000;
+    color: #FAA300;
     border-width: 0.25rem;
-    width: 5rem;
+    width: 4rem;
 }
 
 .contact-section .social {

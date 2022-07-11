@@ -63,34 +63,32 @@ async function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Project One Row-->
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                        <div class="col-lg-6">
-                            <img width="1920" height="1079" class="img-fluid" src="assets/img/home/webp/scrabble-dev.webp" alt="..." />
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <p class="text-white">A person who  helps connect the world around them in ways that would otherwise not be possible.</p>
-                                        <hr class="d-none d-lg-block mb-0 ms-0" />
+                        <!-- Project One Row-->
+                        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                            <div class="col-lg-6">
+                                <img width="1920" height="1079" class="img-fluid" src="assets/img/home/webp/scrabble-dev.webp" alt="..." />
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <p class="text-white">A person who  helps connect the world around them in ways that would otherwise not be possible.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Project Two Row-->
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col-lg-6"><img width="1920" height="1079" class="img-fluid scrabble-image" src="assets/img/home/webp/scrabble-js.webp" alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <p class="text-white">
-                                            The most widely used language in the world for creating complex aplications and websites on the internet.
-                                        </p>
-                                        <hr class="d-none d-lg-block mb-0 me-0" />
+                        <!-- Project Two Row-->
+                        <div class="row gx-0 justify-content-center">
+                            <div class="col-lg-6"><img width="1920" height="1079" class="img-fluid scrabble-image" src="assets/img/home/webp/scrabble-js.webp" alt="..." /></div>
+                            <div class="col-lg-6 order-lg-first">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="text-white">
+                                                The most widely used language in the world for creating complex aplications and websites on the internet.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
