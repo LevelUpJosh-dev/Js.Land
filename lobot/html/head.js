@@ -13,7 +13,6 @@ async function Head() {
         ${await Serve(`bootstrap:css`)}
         ${await Serve(`theme:css`)}
         ${await Serve(`theme:js`)}
-        ${await Serve(`sherlock:js`)}
     </head>
   `;
 }

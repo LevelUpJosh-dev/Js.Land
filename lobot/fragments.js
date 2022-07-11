@@ -7,4 +7,4 @@ import { Home } from "./html/home.js";
 /** Content Articles  **/
 import { TheEventLoop } from "./html/theEventLoop.js";
 
-export { ContentGrid, Footer, Head, Navigation, Home, TheEventLoop };
+export { ContentGrid, Footer, Head, Home, Navigation, TheEventLoop };

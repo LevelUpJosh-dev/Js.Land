@@ -6,12 +6,12 @@ async function ContentGrid() {
   return `
     ${await Head()}
     ${await Serve(`contentGrid:css`)}
-    <body id="page-top" class="content-grid">
-      <section>
+    <body id="page-top">
+      <section  class="content-grid">
           <div class="container">
               <div class="row">
                 <div class="col-md-4">
-                   <a href="/content/TheEventLoop">
+                   <a href="TheEventLoop">
                      <div id="the-event-loop" class="card profile-card">
                          <div class="background-block">
                               <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -26,7 +26,7 @@ async function ContentGrid() {
                   </a>
                 </div>
                 <div class="col-md-4">
-                <a href="content/LearnWebFundamentals">
+                <a href="LearnWebFundamentals">
                  <div id="learn-web-fundamentals" class="card profile-card">
                      <div class="background-block">
                           <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -41,7 +41,7 @@ async function ContentGrid() {
                 </a>
                 </div>
                 <div class="col-md-4">
-                   <a href="content/BeAnAdvocate">
+                   <a href="BeAnAdvocate">
                     <div id="be-an-advocate" class="card profile-card">
                        <div class="background-block">
                             <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -57,7 +57,8 @@ async function ContentGrid() {
                 </div>
           </div>
       </section>
-      ${await Footer()}
+      <section class="content-container"></section>
+      ${await Serve(`contentGrid:js`)}
   </div>
   `;
 }

@@ -1,4 +1,11 @@
-import { ContentGrid, Footer, Head, Navigation, Home, TheEventLoop } from "./fragments.js";
+import {
+  ContentGrid,
+  Footer,
+  Head,
+  Home,
+  Navigation,
+  TheEventLoop,
+} from "./fragments.js";
 
 const fragmentBundle = {
   ContentGrid: ContentGrid,
@@ -6,7 +13,7 @@ const fragmentBundle = {
   Head: Head,
   Footer: Footer,
   Navigation: Navigation,
-  TheEventLoop: TheEventLoop
+  TheEventLoop: TheEventLoop,
 };
 
 /** Reads and returns the text content of the given resource **/
