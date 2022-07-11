@@ -233,6 +233,10 @@ a > code {
     border-color: #f5efed;
 }
 
+.navbar {
+    z-index: 9999999;
+}
+
 .nav-link {
     color: #FAA300;
     font-size: 1rem;

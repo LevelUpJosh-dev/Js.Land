@@ -17,6 +17,7 @@ server.get(`/`, async (request, response) => {
   response.send();
 });
 
+server.use(`/content`, serveStatic(`public`));
 server.get(`/content`, async (request, response) => {
   const body = await Serve(`ContentGrid:html`);
   response.body = await body();
