@@ -18,7 +18,7 @@ const fragmentBundle = {
 
 /** Reads and returns the text content of the given resource **/
 async function LoadResource(name, type) {
-  const lobotResourcePath = `lobot/${type}/${name}.${type}`;
+  const lobotResourcePath = `lobot/resources/${type}/${name}.${type}`;
 
   return (type === `css`)
     ? `<style>${await Deno.readTextFile(lobotResourcePath)}</style>`

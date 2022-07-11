@@ -1,4 +1,4 @@
-import { Serve } from "../lobot.js";
+import { Serve } from "../../lobot.js";
 
 async function Head() {
   return `

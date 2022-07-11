@@ -1,5 +1,3 @@
-import { Serve } from "../lobot.js";
-
 async function Navigation() {
   return `
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -13,9 +11,10 @@ async function Navigation() {
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>                            </ul>
+                  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>

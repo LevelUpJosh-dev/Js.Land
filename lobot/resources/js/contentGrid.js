@@ -3,7 +3,8 @@
   contentCards.forEach((element) => {
     element.addEventListener("click", async function (event) {
       event.preventDefault();
-      const urlFragments = event.currentTarget.closest("a").href.split("/");
+      const gridCard = event.currentTarget;
+      const urlFragments = gridCard.closest("a").href.split("/");
       const contentId = urlFragments[4];
       const requestPath = `${urlFragments[4]}`;
       const response = fetch(requestPath, {
@@ -18,6 +19,7 @@
           const contentGrid = document.querySelector(`.content-grid`);
           const contentContainer = document.querySelector(`.content-container`);
           contentGrid.style.display = "none";
+          gridCard.setAttribute(`inline-cache`, true);
           contentContainer.innerHTML = content.body;
         });
       });
@@ -43,7 +45,8 @@
 
   window.addEventListener("content-loaded", function (event) {
     const eventData = event.data[0] || null;
-    const contentClose = eventData.target.querySelector(".content-close");
+    const htmlNode = eventData.target;
+    const contentClose = htmlNode.querySelector(".content-close");
     console.log(eventData);
     contentClose.addEventListener("click", function (event) {
       event.preventDefault();

@@ -6,30 +6,14 @@ import {
 
 const server = opine();
 
-import { Serve } from "./lobot/lobot.js";
-
 server.use(serveStatic(`public`));
 server.use(json());
 
-server.get(`/`, async (request, response) => {
-  const body = await Serve(`Home:html`);
-  response.body = await body();
-  response.send();
-});
+import { Content, Home } from "./controllers/controllers.js";
 
-server.use(`/content`, serveStatic(`public`));
-server.get(`/content`, async (request, response) => {
-  const body = await Serve(`ContentGrid:html`);
-  response.body = await body();
-  response.send();
-});
-
-server.get(`/content/:id`, async (request, response) => {
-  const body = request.body;
-  const content = await Serve(`${request.params.id}:html`);
-  const responseBody = await content();
-  response.json(JSON.stringify({ "body": responseBody }));
-});
+/** Register Controller Routes **/
+Home(server);
+Content(server);
 
 server.listen(3000);
-console.log(`Website running on port 3000`);
+console.log(`JsLand is running on port 3000`);
