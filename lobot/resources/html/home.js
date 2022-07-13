@@ -1,10 +1,10 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 async function Home() {
-  const Head = await Serve(`Head:html`);
-  const Navigation = await Serve(`Navigation:html`);
-  const Footer = await Serve(`Footer:html`);
-  return `
+    const Head = await Serve(`Head:html`);
+    const Navigation = await Serve(`Navigation:html`);
+    const Footer = await Serve(`Footer:html`);
+    return `
         ${await Head()}
         <body id="page-top" class="home">
             ${await Navigation()}

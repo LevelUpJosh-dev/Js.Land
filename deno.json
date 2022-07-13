@@ -1,0 +1,7 @@
+{
+    "tasks": {
+        "start": "deno run --allow-read --allow-net --watch JsLand.js",
+        "format": "deno fmt --options-indent-width 4 --options-single-quote",
+        "compile": "deno compile --allow-read --allow-net ./jsLand.js"
+    }
+}

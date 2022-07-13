@@ -1,10 +1,10 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 async function ContentGrid() {
-  const Head = await Serve(`Head:html`);
-  const Footer = await Serve(`Footer:html`);
-  const Navigation = await Serve(`Navigation:html`);
-  return `
+    const Head = await Serve(`Head:html`);
+    const Footer = await Serve(`Footer:html`);
+    const Navigation = await Serve(`Navigation:html`);
+    return `
     ${await Head()}
     ${await Serve(`contentGrid:css`)}
     ${await Navigation()}

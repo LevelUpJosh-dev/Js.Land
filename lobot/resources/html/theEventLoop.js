@@ -1,4 +1,4 @@
-import {Serve} from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 async function TheEventLoop() {
     return `
@@ -35,4 +35,4 @@ async function TheEventLoop() {
   `;
 }
 
-export {TheEventLoop};
+export { TheEventLoop };

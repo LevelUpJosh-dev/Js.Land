@@ -1,15 +1,15 @@
 import {
-  json,
-  opine,
-  serveStatic,
-} from "https://deno.land/x/opine@2.2.0/mod.ts";
+    json,
+    opine,
+    serveStatic,
+} from 'https://deno.land/x/opine@2.2.0/mod.ts';
 
 const server = opine();
 
 server.use(serveStatic(`public`));
 server.use(json());
 
-import { Content, Home } from "./controllers/controllers.js";
+import { Content, Home } from './controllers/controllers.js';
 
 /** Register Controller Routes **/
 Home(server);
