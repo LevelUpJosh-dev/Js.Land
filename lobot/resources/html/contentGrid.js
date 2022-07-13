@@ -15,10 +15,10 @@ async function ContentGrid() {
                    <a href="TheModernBrowser">
                     <div id="the-modern-browser" class="card profile-card">
                        <div class="background-block">
-                            <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                            <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                         </div>
                         <div class="profile-thumb-block">
-                            <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                            <img src="assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
                            <h2>The Browser<small>How a digital square box, became the center of the world.</small></h2>
@@ -31,10 +31,10 @@ async function ContentGrid() {
                     <a href="LearnWebFundamentals">
                      <div id="learn-web-fundamentals" class="card profile-card">
                          <div class="background-block">
-                              <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                              <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                           </div>
                           <div class="profile-thumb-block">
-                              <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                              <img src="assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                           </div>
                           <div class="card-content">
                              <h2>Learn Web Fundamentals<small>Html, Css, Js</small></h2>
@@ -46,10 +46,10 @@ async function ContentGrid() {
                      <a href="BeAnAdvocate">
                       <div id="be-an-advocate" class="card profile-card">
                          <div class="background-block">
-                              <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                              <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                           </div>
                           <div class="profile-thumb-block">
-                              <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                              <img src="assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                           </div>
                           <div class="card-content">
                              <h2>Be an Advocate<small>For yourself and others</small></h2>
@@ -61,10 +61,10 @@ async function ContentGrid() {
                  <a href="TheEventLoop">
                    <div id="the-event-loop" class="card profile-card">
                        <div class="background-block">
-                            <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                            <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                         </div>
                         <div class="profile-thumb-block">
-                            <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                            <img src="assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
                            <h2>The Event Loop<small>V8? stack? heap? runtime? wtf?</small></h2>
@@ -76,10 +76,10 @@ async function ContentGrid() {
                    <a href="WebComponents">
                     <div id="web-components" class="card profile-card">
                        <div class="background-block">
-                            <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                            <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                         </div>
                         <div class="profile-thumb-block">
-                            <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                            <img src="assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
                            <h2>Web Components<small>The building blocks of the modern website.</small></h2>

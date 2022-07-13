@@ -10,23 +10,34 @@
             const urlFragments = gridCard.closest('a').href.split('/');
             const contentId = urlFragments[4];
             const requestPath = `${urlFragments[4]}`;
-            const response = fetch(requestPath, {
-                method: 'GET',
-                credentials: 'same-origin',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }).then((response) => {
-                response.json().then((body) => {
-                    const content = JSON.parse(body);
-                    const contentGrid = document.querySelector(`.content-grid`);
-
-                    contentGrid.style.display = 'none';
-                    gridCard.setAttribute(`inline-cache`, true);
-                    gridCard.setAttribute(`inline-cache-content`, content);
-                    contentContainer.innerHTML = content.body;
+            if (!gridCard.getAttribute(`inline-cache`)) {
+                const response = fetch(requestPath, {
+                    method: 'GET',
+                    credentials: 'same-origin',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }).then((response) => {
+                    response.json().then((body) => {
+                        const content = JSON.parse(body);
+                        const contentGrid = document.querySelector(
+                            `.content-grid`,
+                        );
+                        contentGrid.style.display = 'none';
+                        gridCard.setAttribute(`inline-cache`, true);
+                        gridCard.setAttribute(`inline-cache-content`, content.body);
+                        contentContainer.innerHTML = content.body;
+                    });
                 });
-            });
+            } else {
+                const cardCachedData = gridCard.getAttribute(
+                    `inline-cache-content`,
+                );
+
+                if (!cardCachedData) { return }
+                contentGrid.style.display = 'none';
+                contentContainer.innerHTML = cardCachedData;
+            }
         });
     });
 
@@ -50,7 +61,6 @@
         const eventData = event.data[0] || null;
         const htmlNode = eventData.target;
         const contentClose = htmlNode.querySelector('.content-close');
-        console.log(eventData);
         contentClose.addEventListener('click', function (event) {
             event.preventDefault();
             contentGrid.style.display = 'block';
