@@ -7,26 +7,26 @@ async function ContentGrid() {
     return `
     ${await Head()}
     ${await Serve(`contentGrid:css`)}
-    ${await Navigation()}
     <body id="page-top">
         <section  class="content-grid">
             <div class="container">
                 <div class="row">
                   <div class="col-md-4">
-                     <a href="TheEventLoop">
-                       <div id="the-event-loop" class="card profile-card">
-                           <div class="background-block">
-                                <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
-                            </div>
-                            <div class="profile-thumb-block">
-                                <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
-                            </div>
-                            <div class="card-content">
-                               <h2>The Event Loop<small>V8? stack? heap? runtime? wtf?</small></h2>
-                            </div>
+                   <a href="TheModernBrowser">
+                    <div id="the-modern-browser" class="card profile-card">
+                       <div class="background-block">
+                            <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
+                        </div>
+                        <div class="profile-thumb-block">
+                            <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
+                        </div>
+                        <div class="card-content">
+                           <h2>The Browser<small>How a digital square box, became the center of the world.</small></h2>
+                          </div>
                       </div>
                     </a>
-                  </div>
+                </div>
+                  
                   <div class="col-md-4">
                     <a href="LearnWebFundamentals">
                      <div id="learn-web-fundamentals" class="card profile-card">
@@ -57,9 +57,9 @@ async function ContentGrid() {
                         </div>
                       </a>
                   </div>
-                  <div class="col-md-4">
-                   <a href="TheModernBrowser">
-                    <div id="the-modern-browser" class="card profile-card">
+                <div class="col-md-4">
+                 <a href="TheEventLoop">
+                   <div id="the-event-loop" class="card profile-card">
                        <div class="background-block">
                             <img src="/assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
                         </div>
@@ -67,11 +67,11 @@ async function ContentGrid() {
                             <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
-                           <h2>The Browser<small>How a digital square box became the center of the world.</small></h2>
-                          </div>
-                      </div>
-                    </a>
-                </div>
+                           <h2>The Event Loop<small>V8? stack? heap? runtime? wtf?</small></h2>
+                        </div>
+                  </div>
+                </a>
+              </div>
                 <div class="col-md-4">
                    <a href="WebComponents">
                     <div id="web-components" class="card profile-card">
@@ -82,7 +82,7 @@ async function ContentGrid() {
                             <img src="/assets/img/home/webp/logo-solid.webp" alt="profile-image" class="profile"/>
                         </div>
                         <div class="card-content">
-                           <h2>Web Components<small>The building blocks of the modern DOM</small></h2>
+                           <h2>Web Components<small>The building blocks of the modern website.</small></h2>
                           </div>
                       </div>
                     </a>

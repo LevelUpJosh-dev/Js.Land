@@ -1,5 +1,8 @@
-(async function ContentGrid() {
+(function ContentGrid() {
     const contentCards = document.querySelectorAll(`.content-grid .card`);
+    const contentContainer = document.querySelector(
+        `.content-container`,
+    );
     contentCards.forEach((element) => {
         element.addEventListener('click', async function (event) {
             event.preventDefault();
@@ -17,18 +20,16 @@
                 response.json().then((body) => {
                     const content = JSON.parse(body);
                     const contentGrid = document.querySelector(`.content-grid`);
-                    const contentContainer = document.querySelector(
-                        `.content-container`,
-                    );
+
                     contentGrid.style.display = 'none';
                     gridCard.setAttribute(`inline-cache`, true);
+                    gridCard.setAttribute(`inline-cache-content`, content);
                     contentContainer.innerHTML = content.body;
                 });
             });
         });
     });
 
-    const contentContainer = document.querySelector(`.content-container`);
     const contentGrid = document.querySelector(`.content-grid`);
     const contentClose = document.querySelector(`.content-close`);
     const contentObserver = new MutationObserver(function (mutations) {
