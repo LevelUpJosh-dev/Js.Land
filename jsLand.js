@@ -1,4 +1,8 @@
-//import { createRequire } from "https://deno.land/std@0.77.0/node/module.ts";
+import { instantiate } from "./wasm/lib/rs_lib.generated.js";
+
+const { home } = await instantiate();
+const rustHome = home('Josh');
+
 import { opine } from 'https://deno.land/x/opine@2.2.0/mod.ts';
 
 const server = opine();
