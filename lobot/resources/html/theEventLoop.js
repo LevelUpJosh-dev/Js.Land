@@ -1,7 +1,7 @@
-import { Serve } from '../../lobot.js';
+import { Serve } from "../../lobot.js";
 
 async function TheEventLoop() {
-    return `
+  return `
     ${await Serve(`javascript:css`)}
     <div class="container">
         <div class="row">

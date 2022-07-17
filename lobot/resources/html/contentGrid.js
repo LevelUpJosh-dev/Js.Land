@@ -1,11 +1,8 @@
-import { Serve } from '../../lobot.js';
+import { Serve } from "../../lobot.js";
 
 async function ContentGrid() {
-    const Head = await Serve(`Head:html`);
-    const Footer = await Serve(`Footer:html`);
-    const Navigation = await Serve(`Navigation:html`);
-    return `
-    ${await Head()}
+  return `
+    ${await window.Head()}
     ${await Serve(`contentGrid:css`)}
     <body id="page-top">
         <section  class="content-grid">
@@ -92,7 +89,7 @@ async function ContentGrid() {
         <section class="content-container"></section>
         ${await Serve(`contentGrid:js`)}
     </div>
-    ${await Footer()}
+    ${await window.Footer()}
   `;
 }
 
