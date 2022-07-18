@@ -9,7 +9,6 @@ import { Serve } from "../../lobot.js";
 
 async function TheEventLoop(options) {
   return `
-    ${await Serve(`javascript:css`)}
     <div class="container">
         <div class="row">
             <div class="col-6">

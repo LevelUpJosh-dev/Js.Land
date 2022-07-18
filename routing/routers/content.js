@@ -13,6 +13,7 @@ const ContentRouter = Router();
 
 ContentRouter.use(json());
 ContentRouter.use(serveStatic(`public`));
+ContentRouter.use(serveStatic(`/html/public`));
 
 /**
  * @route GET /content
@@ -24,24 +25,30 @@ ContentRouter.get(`/`, async (request, response) => {
 });
 
 /**
- * @route GET /content/:id
+ * @route GET content/html/:id
  * @param {string} id - The id of the content to get
+ * @param {boolean} [remoteFetch] - Weather this is a remote fetch or page load.
  */
-ContentRouter.get(`/:id`, async (request, response) => {
-  const body = await Serve(`${request.params.id}:html`);
-  response.body = await body();
-  response.send();
+ContentRouter.get(`/html/:id`, async (request, response) => {
+  const contentId = request.params.id;
+  const body = await Serve(`${contentId}:html`);
+  const responseBody = await body();
+  response.send(responseBody);
 });
 
 /**
- * @route GET /content/:id/:section
+ * @route GET /content/json/:id
  * @param {string} id - The id of the content to get
- * @param {string} section - The section of the content to get
+ * @param {boolean} [remoteFetch] - Weather this is a remote fetch or page load.
  */
-ContentRouter.get(`/:id/:section`, async (request, response) => {
-  const body = await Serve(`${request.params.id}:html`);
-  const responseBody = await body();
-  response.json(JSON.stringify({ "body": responseBody }));
+ContentRouter.get(`/json/:id`, async (request, response) => {
+  const contentId = request.params.id;
+  const body = await Serve(`${contentId}:html`);
+  let responseBody = await body();
+  responseBody = {
+    "body": responseBody
+  }
+  response.send(JSON.stringify(responseBody));
 });
 
 export default ContentRouter;

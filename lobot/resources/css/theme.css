@@ -813,6 +813,10 @@ a > code {
     background-color: #fff;
 }
 
+#mainNav .nav-item {
+    display: none;
+}
+
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
@@ -872,7 +876,7 @@ a > code {
         background-color: #ffffff;
     }
 
-    #mainNav.navbar-shrink img {
+    #mainNav.navbar-shrink .nav-item {
         display: block;
     }
 

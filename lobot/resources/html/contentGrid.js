@@ -16,7 +16,7 @@ async function ContentGrid(options) {
             <div class="container">
                 <div class="row">
                   <div class="col-md-4">
-                   <a href="TheModernBrowser">
+                   <a href="json/TheModernBrowser">
                     <div id="the-modern-browser" class="card profile-card">
                        <div class="background-block">
                             <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -32,7 +32,7 @@ async function ContentGrid(options) {
                 </div>
                   
                   <div class="col-md-4">
-                    <a href="LearnWebFundamentals">
+                    <a href="json/LearnWebFundamentals">
                      <div id="learn-web-fundamentals" class="card profile-card">
                          <div class="background-block">
                               <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -47,7 +47,7 @@ async function ContentGrid(options) {
                     </a>
                   </div>
                   <div class="col-md-4">
-                     <a href="BeAnAdvocate">
+                     <a href="json/BeAnAdvocate">
                       <div id="be-an-advocate" class="card profile-card">
                          <div class="background-block">
                               <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -62,7 +62,7 @@ async function ContentGrid(options) {
                       </a>
                   </div>
                 <div class="col-md-4">
-                 <a href="TheEventLoop">
+                 <a href="json/TheEventLoop">
                    <div id="the-event-loop" class="card profile-card">
                        <div class="background-block">
                             <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>
@@ -77,7 +77,7 @@ async function ContentGrid(options) {
                 </a>
               </div>
                 <div class="col-md-4">
-                   <a href="WebComponents">
+                   <a href="json/WebComponents">
                     <div id="web-components" class="card profile-card">
                        <div class="background-block">
                             <img src="assets/img/home/webp/bg-masthead.webp" alt="profile-sample1" class="background"/>

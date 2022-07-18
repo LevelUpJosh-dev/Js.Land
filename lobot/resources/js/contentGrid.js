@@ -8,25 +8,25 @@
       event.preventDefault();
       const gridCard = event.currentTarget;
       const urlFragments = gridCard.closest("a").href.split("/");
-      const contentId = urlFragments[4];
-      const requestPath = `${urlFragments[4]}`;
+      const resourceType = urlFragments[4];
+      const contentId = urlFragments[5];
+      const requestPath = `${resourceType}/${contentId}`;
       if (!gridCard.getAttribute(`inline-cache`)) {
-        const response = fetch(requestPath, {
+        const response = fetch(`${requestPath}`, {
           method: "GET",
           credentials: "same-origin",
           headers: {
             "Content-Type": "application/json",
           },
         }).then((response) => {
-          response.json().then((body) => {
-            const content = JSON.parse(body);
+          response.json().then((response) => {
             const contentGrid = document.querySelector(
               `.content-grid`,
             );
             contentGrid.style.display = "none";
             gridCard.setAttribute(`inline-cache`, true);
-            gridCard.setAttribute(`inline-cache-content`, content.body);
-            contentContainer.innerHTML = content.body;
+            gridCard.setAttribute(`inline-cache-content`, response.body);
+            contentContainer.innerHTML = response.body;
           });
         });
       } else {

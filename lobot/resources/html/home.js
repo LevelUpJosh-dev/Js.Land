@@ -11,7 +11,7 @@ async function Home(options) {
   return `
         ${await window.Head()}
         <body id="page-top" class="home">
-            ${await window.Navigation()}
+            ${await window.Navigation(options)}
             <!-- Masthead-->
             <header class="masthead">
                 <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
