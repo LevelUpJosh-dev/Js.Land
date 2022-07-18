@@ -1,6 +1,13 @@
 import { Serve } from "../../lobot.js";
 
-async function Footer() {
+/**
+ * @type {Footer}
+ * @param {Object} [options] - A optional config object which can be passed into the template giving contextual data.
+ * @returns {Promise<string>}
+ * @constructor
+ */
+
+async function Footer(options) {
   return `
     <footer class="footer small text-center">
         <div class="container px-4 px-lg-5">

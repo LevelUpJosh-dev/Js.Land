@@ -1,7 +1,16 @@
+/**
+ * @type {Navigation}
+ * @param options {string} [options] - A optional config object which can be passed into the template giving contextual data.
+ * @returns {Promise<string>}
+ * @constructor
+ */
+
 async function Navigation(options) {
   const optionsOrNull = options || {};
   return `
-    <nav class="navbar navbar-expand-lg navbar-light ${"type" in optionsOrNull && optionsOrNull.type === `fixed` ? "fixed-top" : ""}" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light ${
+    "type" in optionsOrNull && optionsOrNull.type === `fixed` ? "fixed-top" : ""
+  }" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top" aria-label="Js.Land main navigation">
                 <img width="485px" height="485px" src="assets/img/home/webp/logo-solid.webp" alt="Js.Land logo image link" class="img-fluid logo-solid pb-3" />

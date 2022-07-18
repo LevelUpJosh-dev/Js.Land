@@ -1,6 +1,13 @@
 import { Serve } from "../../lobot.js";
 
-async function TheEventLoop() {
+/**
+ * @type {TheEventLoop}
+ * @param options {string} [options] - A optional config object which can be passed into the template giving contextual data.
+ * @returns {Promise<string>}
+ * @constructor
+ */
+
+async function TheEventLoop(options) {
   return `
     ${await Serve(`javascript:css`)}
     <div class="container">

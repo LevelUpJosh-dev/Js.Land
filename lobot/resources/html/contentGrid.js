@@ -1,6 +1,13 @@
 import { Serve } from "../../lobot.js";
 
-async function ContentGrid() {
+/**
+ * @type {ContentGrid}
+ * @param {Object} [options] - A optional config object which can be passed into the template giving contextual data.
+ * @returns {Promise<string>}
+ * @constructor
+ */
+
+async function ContentGrid(options) {
   return `
     ${await window.Head()}
     ${await Serve(`contentGrid:css`)}

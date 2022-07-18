@@ -1,5 +1,13 @@
 import { Serve } from "../../lobot.js";
 
+/**
+ * @type {LearnHtml}
+ * @param {object} [options] - A optional config object which can be passed into the template giving contextual data.
+ * @param options
+ * @returns {Promise<string>}
+ * @constructor
+ */
+
 async function LearnHtml(options) {
   return `
     ${await window.Head()}

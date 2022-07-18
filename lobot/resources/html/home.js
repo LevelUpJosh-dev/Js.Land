@@ -1,6 +1,13 @@
 import { Serve } from "../../lobot.js";
 
-async function Home() {
+/**
+ * @type {Home}
+ * @param {Object} [options] - The options object can be used to pass in context data.
+ * @returns {Promise<string>} - This function returns a promise that resolves to the HTML string of the template.
+ * @constructor
+ */
+
+async function Home(options) {
   return `
         ${await window.Head()}
         <body id="page-top" class="home">

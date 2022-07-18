@@ -1,5 +1,12 @@
 import { Serve } from "../../lobot.js";
 
+/**
+ * @type {Head}
+ * @param {Object} [options] - Options object can be used to pass in context data to affect the template based on where the call is occurring.
+ * @returns {Promise<string>} - Returns a promise that resolves to the HTML string.
+ * @constructor
+ */
+
 async function Head(options) {
   return `
     <head>
