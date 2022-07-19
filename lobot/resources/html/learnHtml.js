@@ -1,4 +1,4 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 /**
  * @type {LearnHtml}
@@ -9,7 +9,7 @@ import { Serve } from "../../lobot.js";
  */
 
 async function LearnHtml(options) {
-  return `
+    return `
     ${await window.Head()}
     ${await Serve(`learnHtml:css`)}
     <div id="learn-html" class="container-fluid mt-5">
@@ -70,15 +70,12 @@ async function LearnHtml(options) {
                               <ul class="list-group mt-3">
                                   <li class="list-group-item list-group-item-danger">
                                       You could throw some JavaScript into your html page within some <strong>script</strong> tags like this:
-                                      <!-- TODO: Insert image example here. -->
-                                  </li>
-                                  <li class="list-group-item">
-                                    <div class="spacer"></div>
+                                      <img src="/assets/img/learnHtml/generic_script_tag.svg" alt="basic example of html usage, div tag, p tag, h1 tag" class="img-fluid" />
                                   </li>
                                   <li class="list-group-item list-group-item-warning">
                                       You could create a JavaScript file using the file extension <strong>YourFileName.js</strong> and then link it to your html page 
                                       using a script tag and src attribute like this:
-                                      <!-- TODO: Insert image example here. -->
+                                      <img src="/assets/img/learnHtml/script_include_file.svg" alt="basic example of html usage, div tag, p tag, h1 tag" class="img-fluid" />
                                   </li>
                               </ul>
                             </span>
@@ -99,7 +96,6 @@ async function LearnHtml(options) {
         </div>
         ${await window.Footer()}
     </div>
-    ${await Serve(`learnHtml:js`)}
   `;
 }
 

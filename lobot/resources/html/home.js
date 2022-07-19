@@ -1,4 +1,4 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 /**
  * @type {Home}
@@ -8,7 +8,7 @@ import { Serve } from "../../lobot.js";
  */
 
 async function Home(options) {
-  return `
+    return `
         ${await window.Head()}
         <body id="page-top" class="home">
             ${await window.Navigation(options)}

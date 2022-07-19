@@ -1,4 +1,4 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 /**
  * @type {ContentGrid}
@@ -8,7 +8,7 @@ import { Serve } from "../../lobot.js";
  */
 
 async function ContentGrid(options) {
-  return `
+    return `
     ${await window.Head()}
     ${await Serve(`contentGrid:css`)}
     <body id="page-top">

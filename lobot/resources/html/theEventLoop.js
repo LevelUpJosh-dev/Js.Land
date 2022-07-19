@@ -1,4 +1,4 @@
-import { Serve } from "../../lobot.js";
+import { Serve } from '../../lobot.js';
 
 /**
  * @type {TheEventLoop}
@@ -8,7 +8,7 @@ import { Serve } from "../../lobot.js";
  */
 
 async function TheEventLoop(options) {
-  return `
+    return `
     <div class="container">
         <div class="row">
             <div class="col-6">
