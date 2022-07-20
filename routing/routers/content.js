@@ -1,4 +1,5 @@
 import { Serve } from '../../lobot/lobot.js';
+
 import {
     json,
     Router,
@@ -16,7 +17,6 @@ const ContentRouter = Router();
  */
 ContentRouter.use(json());
 ContentRouter.use(serveStatic(`public`));
-ContentRouter.use(serveStatic(`/html/public`));
 
 /**
  * @route GET /content

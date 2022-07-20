@@ -1,5 +1,5 @@
 import { opine } from 'https://deno.land/x/opine@2.2.0/mod.ts';
-import { Content, Home } from './routing/routerBundle.js';
+import { Content, Home, Tools } from './routing/routerBundle.js';
 import { LoadGlobals } from './lobot/lobot.js';
 import { Serve } from './lobot/lobot.js';
 
@@ -15,6 +15,10 @@ Deno.bench('content_router', async () => {
 
 Deno.bench('home_router', async () => {
     server.use('/', Home);
+});
+
+Deno.bench('tools_router', async () => {
+    server.use('/tools', Tools);
 });
 
 Deno.bench('home_template', async () => {

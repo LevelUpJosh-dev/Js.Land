@@ -14,7 +14,7 @@ async function LearnHtml(options) {
     ${await Serve(`learnHtml:css`)}
     <div id="learn-html" class="container-fluid mt-5">
         <div class="row">
-                    <div class="col-6">
+          <div class="col-6">
               <div class="card">
                   <div class="card-body">
                       <h5 class="card-title"><strong>HTML</strong></h5>
