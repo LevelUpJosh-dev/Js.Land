@@ -2,6 +2,8 @@
     "tasks": {
         "start": "deno run --allow-read --allow-net --watch JsLand.js",
         "format": "deno fmt --options-indent-width 4 --options-single-quote",
-        "compile": "deno compile --allow-read --allow-net ./jsLand.js"
+        "compile": "deno compile --allow-read --allow-net ./jsLand.js",
+        "benchmark": "deno bench --allow-read --allow-net --unstable",
+        "debug": "deno run --allow-read --allow-net --unstable --inspect-brk ./jsLand.js"
     }
 }

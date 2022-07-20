@@ -21,7 +21,7 @@ ContentRouter.use(serveStatic(`/html/public`));
 /**
  * @route GET /content
  */
-ContentRouter.get(`/`, async (request, response) => {
+ContentRouter.get(`/grid`, async (request, response) => {
     const body = await Serve(`ContentGrid:html`);
     response.body = await body();
     response.send();

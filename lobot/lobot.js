@@ -6,10 +6,12 @@ import {
     LearnHtml,
     Navigation,
     TheEventLoop,
+    Tools,
 } from './fragments.js';
 
 const fragmentBundle = {
     ContentGrid: ContentGrid,
+    Tools: Tools,
     Home: Home,
     Head: Head,
     Footer: Footer,

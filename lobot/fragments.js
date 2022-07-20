@@ -6,6 +6,9 @@ import { ContentGrid } from './resources/html/contentGrid.js';
 import { Navigation } from './resources/html/navigation.js';
 import { Home } from './resources/html/home.js';
 
+/** Tools **/
+import { Tools } from './resources/html/tools.js';
+
 /** Content Modules */
 import { LearnHtml } from '././resources/html/learnHtml.js';
 
@@ -13,4 +16,13 @@ import { LearnHtml } from '././resources/html/learnHtml.js';
 import { TheEventLoop } from './resources/html/theEventLoop.js';
 
 /** Export html fragments */
-export { ContentGrid, Footer, Head, Home, LearnHtml, Navigation, TheEventLoop };
+export {
+    ContentGrid,
+    Footer,
+    Head,
+    Home,
+    LearnHtml,
+    Navigation,
+    TheEventLoop,
+    Tools,
+};

@@ -2,5 +2,6 @@
 
 import Home from './routers/home.js';
 import Content from './routers/content.js';
+import Tools from './routers/tools.js';
 
-export { Content, Home };
+export { Content, Home, Tools };

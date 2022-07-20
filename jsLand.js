@@ -4,9 +4,10 @@ import { LoadGlobals } from './lobot/lobot.js';
 const server = opine();
 await LoadGlobals();
 
-import { Content, Home } from './routing/routerBundle.js';
+import { Content, Home, Tools } from './routing/routerBundle.js';
 server.use('/content', Content);
 server.use('/', Home);
+server.use('/tools', Tools);
 
 server.listen(3000);
 console.log(`JsLand is running on port 3000`);
