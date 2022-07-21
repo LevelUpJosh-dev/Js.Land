@@ -2,26 +2,16 @@ body{
     margin-top:20px;
     background:#FAFAFA;
 }
-.order-card {
-    color: #fff;
+
+.card.flash-card {
+    color: #FAA300;
+    background: url("../assets/img/home/webp/bg-masthead.webp") no-repeat right center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.bg-c-blue {
-    background: linear-gradient(45deg,#4099ff,#73b4ff);
+.flash-card:hover {
+    cursor: pointer;
 }
-
-.bg-c-green {
-    background: linear-gradient(45deg,#2ed8b6,#59e0c5);
-}
-
-.bg-c-yellow {
-    background: linear-gradient(45deg,#FFB64D,#ffcb80);
-}
-
-.bg-c-pink {
-    background: linear-gradient(45deg,#FF5370,#ff869a);
-}
-
 
 .card {
     border-radius: 5px;
@@ -30,7 +20,11 @@ body{
     border: none;
     margin-bottom: 30px;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    height: 260px;
+    width: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 .card .card-block {
@@ -47,4 +41,16 @@ body{
 
 .f-right {
     float: right;
+}
+
+.card-face {
+    backface-visibility: hidden;
+}
+
+.card-face.back {
+    transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
 }

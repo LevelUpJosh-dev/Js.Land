@@ -26,6 +26,11 @@ Deno.bench('home_template', async () => {
     return body();
 });
 
+Deno.bench('tools_template', async () => {
+    const body = await Serve('Tools:html');
+    return body();
+});
+
 Deno.bench('head_template', async () => {
     const body = await Serve('Head:html');
     return body();

@@ -130,13 +130,12 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -1137,4 +1136,9 @@ img.coffee-code {
 
 .fa-js {
     background:  url("../assets/img/js.png") no-repeat center center fixed;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: initial !important;
 }
