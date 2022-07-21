@@ -5,8 +5,8 @@ const server = opine();
 await LoadGlobals();
 
 import { Content, Home, Tools } from './routing/routerBundle.js';
-server.use('/content', Content);
 server.use('/', Home);
+server.use('/content', Content);
 server.use('/tools', Tools);
 
 server.listen(3000);
