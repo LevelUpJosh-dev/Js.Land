@@ -1,0 +1,56 @@
+body{
+    margin-top:20px;
+    background:#FAFAFA;
+}
+
+.card.flash-card {
+    color: #FAA300;
+    background: url("../assets/img/home/webp/bg-masthead.webp") no-repeat right center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.flash-card:hover {
+    cursor: pointer;
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    height: 260px;
+    width: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card .card-block {
+    padding: 25px;
+}
+
+.order-card i {
+    font-size: 26px;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.card-face {
+    backface-visibility: hidden;
+}
+
+.card-face.back {
+    transform: rotateY( 180deg );
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}

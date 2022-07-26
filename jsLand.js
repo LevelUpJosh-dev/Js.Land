@@ -1,15 +1,13 @@
-import { opine, serveStatic } from "https://deno.land/x/opine@2.2.0/mod.ts";
+import { opine } from 'https://deno.land/x/opine@2.2.0/mod.ts';
+import { LoadGlobals } from './lobot/lobot.js';
 
 const server = opine();
+await LoadGlobals();
 
-import { Home } from "./lobot/html/home.js";
-
-server.use(serveStatic(`public`));
-
-server.get(`/`, async (request, response) => {
-  response.body = await Home();
-  response.send();
-});
+import { Content, Home, Tools } from './routing/routerBundle.js';
+server.use('/', Home);
+server.use('/content', Content);
+server.use('/tools', Tools);
 
 server.listen(3000);
-console.log(`Website running on port 3000`);
+console.log(`JsLand is running on port 3000`);
