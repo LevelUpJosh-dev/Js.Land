@@ -3,9 +3,10 @@ body{
     background:#FAFAFA;
 }
 
-.flash-card {
-    color: #FAFAFA;
-    background: url("../assets/img/learnHtml/bg-masthead-variant-one.webp") no-repeat center center fixed;
+.card.flash-card {
+    color: #FAA300;
+    background: url("../assets/img/home/webp/bg-masthead.webp") no-repeat right center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .flash-card:hover {
