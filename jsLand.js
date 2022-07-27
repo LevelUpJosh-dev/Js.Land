@@ -5,6 +5,11 @@ const server = opine();
 await LoadGlobals();
 
 import { Content, Home, Tools } from './routing/routerBundle.js';
+import { ServerPipe, ClientPipe } from './lobot/greenPipe.ts';
+
+const WebSocketServer = ServerPipe();
+const WebSocketClient = ClientPipe(WebSocketServer);
+
 server.use('/', Home);
 server.use('/content', Content);
 server.use('/tools', Tools);

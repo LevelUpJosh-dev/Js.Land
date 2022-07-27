@@ -8,6 +8,7 @@ import { Home } from './resources/html/home.js';
 
 /** Tools **/
 import { Tools } from './resources/html/tools.js';
+import { Compare } from './resources/html/compare.js';
 
 /** Content Modules */
 import { LearnHtml } from '././resources/html/learnHtml.js';
@@ -18,6 +19,7 @@ import { TheEventLoop } from './resources/html/theEventLoop.js';
 /** Export html fragments */
 export {
     ContentGrid,
+    Compare,
     Footer,
     Head,
     Home,

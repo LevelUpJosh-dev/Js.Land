@@ -1,5 +1,6 @@
 import {
     ContentGrid,
+    Compare,
     Footer,
     Head,
     Home,
@@ -11,6 +12,7 @@ import {
 
 const fragmentBundle = {
     ContentGrid: ContentGrid,
+    Compare: Compare,
     Tools: Tools,
     Home: Home,
     Head: Head,
