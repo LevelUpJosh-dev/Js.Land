@@ -17,7 +17,14 @@ async function Home() {
                             <div class="text-center">
                                 <img height="1080px" width="1080px" src="assets/img/home/webp/js-land-transparent-laptop.webp" alt="Js.Land" class="img-fluid pb-2 js-land-laptop" />
                                 <h2 class="mx-auto mt-2 mb-5">Your source for everything code</h2>
-                                <a class="btn btn-primary" href="#about">Learn more..</a>
+                                <div>
+                                    <a class="btn btn-primary" href="#about">Learn more..</a>
+                                    <a class="btn btn-primary" href="https://github.com/RedVanJosh/electron-template">Electron-Template</a>
+                                </div>
+                                <div class="mt-2">
+                                    <a class="btn btn-primary" href="https://github.com/RedVanJosh/fuse-fetch">Fuse-Fetch</a>
+                                    <a class="btn btn-primary" href="https://github.com/RedVanJosh/metamorphism">Metamorphism</a>
+                                </div>
                             </div>
                         </div>
                     </div>
